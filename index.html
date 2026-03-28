@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribución exponencial - Tiempo entre solicitudes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.plot.ly/plotly-3.1.0.min.js" charset="utf-8"></script>
+    <!-- MathJax para formatear matemáticas en el HTML -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Tiempo hasta recibir una solicitud (λ = 3 solicitudes/día)</h1>
+        <div id="grafico" class="grafico"></div>
+        <div class="resultados">
+            <p><strong>Inciso (a):</strong> \( P(X > 5) = e^{-15} \approx 3.059 \times 10^{-7} \) (área casi nula).</p>
+            <p><strong>Inciso (b):</strong> \( P(X < 10) = 1 - e^{-30} \approx 1 \) (área sombreada en azul).</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
